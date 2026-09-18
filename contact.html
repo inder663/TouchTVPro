@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Touch TV Pro</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --accent-2: #0ea5e9;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 500px at 20% -10%, rgba(37, 99, 235, 0.10), transparent 60%),
+                  radial-gradient(1200px 500px at 90% 0%, rgba(14, 165, 233, 0.10), transparent 55%),
+                  var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 52px; }
+    .header {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(14, 165, 233, 0.10));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px 18px;
+    }
+    .header h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+    .header p { margin: 8px 0 0; color: var(--muted); }
+    .card {
+      margin-top: 14px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(17, 24, 39, 0.06);
+      overflow: hidden;
+    }
+    .nav {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .nav .links { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 10px 14px; }
+    .nav .links a { font-size: 13px; padding: 6px 10px; border-radius: 999px; background: rgba(37, 99, 235, 0.08); }
+    .content { padding: 18px 16px 8px; }
+    .section { padding: 14px 0; border-top: 1px solid var(--border); }
+    .section:first-child { border-top: none; padding-top: 6px; }
+    .section h2 { margin: 0 0 8px; font-size: 18px; letter-spacing: -0.01em; }
+    p { margin: 10px 0; }
+    ul { margin: 10px 0 0 18px; padding: 0; }
+    li { margin: 6px 0; }
+    .form { margin-top: 12px; display: grid; gap: 10px; }
+    .field { display: grid; gap: 6px; }
+    .field label { font-size: 13px; color: var(--muted); }
+    .field input, .field textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font: inherit;
+      background: #fff;
+      color: var(--text);
+      box-sizing: border-box;
+    }
+    .field textarea { min-height: 120px; resize: vertical; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+    .btn {
+      appearance: none;
+      border: 1px solid rgba(37, 99, 235, 0.35);
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.14), rgba(14, 165, 233, 0.10));
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn.secondary { background: #fff; border-color: var(--border); color: var(--text); }
+    .hint { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    .footer {
+      padding: 16px;
+      border-top: 1px solid var(--border);
+      background: rgba(17, 24, 39, 0.02);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <h1>Contact</h1>
+      <p>Support for Touch TV Pro</p>
+    </div>
+    <div class="card">
+      <div class="nav">
+        <div class="label">Contents</div>
+        <div class="links">
+          <a href="#support">Support</a>
+<a href="#business">Business Inquiries</a>
+<a href="#faq">FAQ</a>
+        </div>
+      </div>
+      <div class="content">
+        <section id="support" class="section">
+  <h2>Support</h2>
+  <p>If you have any issues or need assistance, please contact us at the support email.</p>
+<p>We are here to help you with your inquiries.</p>
+  
+</section>
+<section id="business" class="section">
+  <h2>Business Inquiries</h2>
+  <p>For business inquiries, please reach out to us at the same support email.</p>
+  
+</section>
+<section id="faq" class="section">
+  <h2>FAQ</h2>
+  <p>For common questions about Touch TV Pro, please refer to the in-app FAQ section or contact us directly.</p>
+  
+</section>
+        <section id="message" class="section">
+  <h2>Send a message</h2>
+  <form class="form" id="contactForm">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" />
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" />
+    </div>
+    <div class="field">
+      <label for="body">Message</label>
+      <textarea id="body" name="body"></textarea>
+    </div>
+    <div class="actions">
+      <button class="btn" type="submit">Send</button>
+      <button class="btn secondary" type="reset">Clear</button>
+    </div>
+    <div class="hint">This form opens your email client and sends an email to devhookdeveloper@gmail.com.</div>
+  </form>
+  <script>
+    (function () {
+      var form = document.getElementById('contactForm');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value || '';
+        var email = document.getElementById('email').value || '';
+        var body = document.getElementById('body').value || '';
+        var subject = 'Support - Touch TV Pro';
+        var fullBody = 'Name: ' + name + '\n' + 'Email: ' + email + '\n\n' + body;
+        var mailto = 'mailto:devhookdeveloper@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(fullBody);
+        window.location.href = mailto;
+      });
+    })();
+  </script>
+</section>
+      </div>
+      <div class="footer">
+        <strong>Email</strong><br />
+        devhookdeveloper@gmail.com - We typically respond within 2 business days.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
